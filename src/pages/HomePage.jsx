@@ -1,8 +1,10 @@
+import { listings } from '@/api/data/listings';
+import ListingList from '@/components/ListingList';
+
 const HomePage = () => {
   return (
-    <div>
-      <h1>Home Page</h1>
-      <p>This is the home page.</p>
+    <div className='container py-4'>
+      <ListingList listings={listings} />
     </div>
   );
 };
